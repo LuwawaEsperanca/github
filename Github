@@ -1,0 +1,41 @@
+Configurações globais 
+
+git config --global user.name "your name" -> set your name
+git config --global user.mail "your e-mail of regist to github" 
+
+
+git config --global user.name "Luwawa Esperança" -> set your name
+git config --global user.mail "luwawa20@gmail.com" -> set your e-mail
+git config --list -> show your global configuration
+
+
+associação de um pc para ter permissão de fazer subir as cenas.
+
+ssh-keygen -t ed25519 -C "your e-mail"
+
+ex:
+ssh-keygen -t ed25519 -C "luwawa20@gmail.com". 
+deve ser posto no terminal.
+
+vá para as definições/setting(ssh)
+aberte new ssh;
+coloque um nome arbitrária para identificar o pc
+coloque a chave gerada e ja está.
+
+2 - Salvar os projectos no git / github
+
+git init
+git add .
+git commit -m "Mensagem explicativa"
+git branch -M main
+git remote add origin git@github.com:seuusuario/seurepositorio.git
+git push -u origin main
+
+
+notes:
+	- git add - add os file alocando em stage; isso da possibilidade de comitar ou não;
+	- "." -> é a representação de todos os dados na paginas.(*=.);
+	- git status -> apresenta os file que estão no stage;
+	- git commit -m "mensagem" -> é o comando que põem os dados no versionamento.
+	
+
